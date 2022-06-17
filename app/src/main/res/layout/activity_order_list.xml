@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C4CEFB"
+    tools:context=".forClient.OrderList">
+
+    <Button
+        android:id="@+id/buttonMassage"
+        android:layout_width="186dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="79dp"
+        android:text="@string/massage"
+        android:textSize="16sp"
+        app:backgroundTint="#AFA75F"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCExit2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonHair"
+        android:layout_width="187dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/hair"
+        android:textSize="16sp"
+        app:backgroundTint="#BF67BB"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMassage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMake"
+        android:layout_width="181dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="43dp"
+        android:onClick="onWindOrderMake"
+        android:text="@string/make"
+        android:textSize="16sp"
+        app:backgroundTint="#60B15A"
+        app:layout_constraintBottom_toTopOf="@+id/buttonHair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonManic"
+        android:layout_width="186dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="37dp"
+        android:text="@string/manic"
+        android:textSize="16sp"
+        app:backgroundTint="#437F9A"
+        app:layout_constraintBottom_toTopOf="@+id/buttonMake"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCExit2"
+        android:layout_width="85dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginBottom="44dp"
+        android:background="#7FE6DE"
+        android:onClick="backOnClientAcc"
+        android:text="@string/backOn"
+        android:textColor="#37474E"
+        android:textSize="16sp"
+        app:backgroundTint="#F16E7D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewQuest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="52dp"
+        android:text="@string/quect"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonManic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

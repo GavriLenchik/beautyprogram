@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDCDCD"
+    tools:context=".forClient.WizardProfileForClient">
+
+    <TextView
+        android:id="@+id/textViewSpec4"
+        android:layout_width="364dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpec3" />
+
+    <TextView
+        android:id="@+id/textViewField4"
+        android:layout_width="155dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCity11" />
+
+    <TextView
+        android:id="@+id/textViewStatus4"
+        android:layout_width="69dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="33dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewStatus3"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewW3" />
+
+    <TextView
+        android:id="@+id/textViewCity11"
+        android:layout_width="133dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginBottom="124dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewField4"
+        app:layout_constraintStart_toEndOf="@+id/textViewCity9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewWName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textColor="#814EBF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewW3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCity8"
+        android:layout_width="143dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/Wnumber"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewField3" />
+
+    <TextView
+        android:id="@+id/textViewStatus3"
+        android:layout_width="69dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="26dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/statusW"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewStatus4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewW3" />
+
+    <TextView
+        android:id="@+id/textViewNumber3"
+        android:layout_width="138dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCity8"
+        app:layout_constraintTop_toBottomOf="@+id/textViewField4" />
+
+    <TextView
+        android:id="@+id/textViewSpec3"
+        android:layout_width="212dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="34dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/specialAc"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCity8" />
+
+    <TextView
+        android:id="@+id/textViewCity9"
+        android:layout_width="46dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="121dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/city"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewField4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWName3" />
+
+    <TextView
+        android:id="@+id/textViewField3"
+        android:layout_width="155dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/fieldAct"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewField4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStatus4" />
+
+    <ImageView
+        android:id="@+id/imageViewW3"
+        android:layout_width="142dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/textViewCity10"
+        android:layout_width="143dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/myWorks"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpec4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

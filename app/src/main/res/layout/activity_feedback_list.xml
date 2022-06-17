@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3C0C5"
+    tools:context=".forClient.FeedbackList">
+
+    <ImageButton
+        android:id="@+id/imageButtonBack6"
+        android:layout_width="65dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FD8282"
+        android:contentDescription="@string/backOn"
+        android:minHeight="48dp"
+        android:onClick="backOnClientAcc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        app:tint="#150606" />
+
+    <SearchView
+        android:layout_width="203dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="592dp"
+        android:layout_marginBottom="28dp"
+        android:background="#EFE6E6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="408dp"
+        android:layout_height="539dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="7dp"
+        android:contentDescription="@string/mastersCl"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonBack3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linFeedList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:drawable/button_onoff_indicator_off"
+            android:showDividers="middle"
+            android:orientation="vertical" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

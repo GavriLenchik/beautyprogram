@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3C0C5"
+    tools:context=".forWizard.WizardPersonalOrder">
+
+    <SearchView
+        android:layout_width="203dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="592dp"
+        android:layout_marginBottom="28dp"
+        android:background="#EFE6E6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="65dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="#FD8282"
+        android:contentDescription="@string/backOn"
+        android:minHeight="48dp"
+        android:onClick="backOnWizAcc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        app:tint="#150606" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="579dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:contentDescription="@string/personalOrd"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

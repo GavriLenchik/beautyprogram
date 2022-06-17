@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.beautyprogram">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BeautyProgram">
+        <activity
+            android:name=".forClient.WindowOrderManic"
+            android:exported="false" />
+        <activity
+            android:name=".forGuest.GuestFreeOrder"
+            android:exported="false" />
+        <activity
+            android:name=".forClient.FeedbackList"
+            android:exported="false" />
+        <activity
+            android:name=".forClient.WizardProfileForClient"
+            android:exported="false" />
+        <activity
+            android:name=".forGuest.GuestFreeOrders"
+            android:exported="false" />
+        <activity
+            android:name=".forGuest.GuestMastersList"
+            android:exported="false" />
+        <activity
+            android:name=".forClient.WindowOrder"
+            android:exported="false" />
+        <activity
+            android:name=".forWizard.WindowFreeOrder"
+            android:exported="false" />
+        <activity
+            android:name=".forWizard.WindowPersonalOrder"
+            android:exported="false" />
+        <activity
+            android:name=".forClient.MastersList"
+            android:exported="false" />
+        <activity
+            android:name=".forWizard.WizardFreeOrders"
+            android:exported="false" />
+        <activity
+            android:name=".forWizard.WizardPersonalOrder"
+            android:exported="false" />
+        <activity
+            android:name=".forClient.OrderList"
+            android:exported="false" />
+        <activity
+            android:name=".forClient.ClientProfile"
+            android:exported="false" />
+        <activity
+            android:name=".forWizard.WizardProfile"
+            android:exported="false" />
+        <activity
+            android:name=".forGuest.GuestAccount"
+            android:exported="false" />
+        <activity
+            android:name=".forClient.ClientAccount"
+            android:exported="false" />
+        <activity
+            android:name=".forClient.CreateClientAcc"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationRequest"
+            android:exported="false" />
+        <activity
+            android:name=".forWizard.WizardAccount"
+            android:exported="false" />
+        <activity
+            android:name=".forWizard.CreatWizardAcc"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDCDCD"
+    tools:context=".forWizard.WizardProfile">
+
+    <TextView
+        android:id="@+id/textViewStatus2"
+        android:layout_width="69dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="38dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewW" />
+
+    <TextView
+        android:id="@+id/textViewCity6"
+        android:layout_width="143dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/myWorks"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLineSpec" />
+
+    <TextView
+        android:id="@+id/textViewSpec"
+        android:layout_width="212dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/specialAc"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCity4" />
+
+    <TextView
+        android:id="@+id/textViewNumber"
+        android:layout_width="138dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="19dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCity4"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerActivity" />
+
+    <Spinner
+        android:id="@+id/spinnerActivity"
+        android:layout_width="193dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/makeupMaster"
+        android:textSize="90sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewField"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCity" />
+
+    <TextView
+        android:id="@+id/textViewCity4"
+        android:layout_width="143dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="29dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/Wnumber"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewField" />
+
+    <TextView
+        android:id="@+id/textViewField"
+        android:layout_width="155dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/fieldAct"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStatus2" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="69dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="38dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/statusW"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewW" />
+
+    <TextView
+        android:id="@+id/textViewWName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text=""
+        android:textColor="#814EBF"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/switchFree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewW"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewW"
+        android:layout_width="142dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="19dp"
+        app:layout_constraintEnd_toStartOf="@+id/switchFree"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Switch
+        android:id="@+id/switchFree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:minHeight="48dp"
+        android:text="@string/free"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewW"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWName"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="144dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="31dp"
+        android:contentDescription="@string/Odessa"
+        android:textSize="90sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewCity"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="46dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/city"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerCity"
+        app:layout_constraintStart_toEndOf="@+id/imageViewW"
+        app:layout_constraintTop_toBottomOf="@+id/switchFree" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLineSpec"
+        android:layout_width="378dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Will be soon;)"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpec" />
+
+    <Button
+        android:id="@+id/buttonUpdate"
+        android:layout_width="102dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/update"
+        app:layout_constraintStart_toEndOf="@+id/textViewCity6"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLineSpec" />
+</androidx.constraintlayout.widget.ConstraintLayout>

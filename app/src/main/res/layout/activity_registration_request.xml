@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6C7C7"
+    tools:context=".RegistrationRequest">
+
+    <TextView
+        android:id="@+id/textAboutApp2"
+        android:layout_width="161dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="66dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/about"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonAboutApp2" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAboutApp2"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="63dp"
+        android:contentDescription="aboutApp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <Button
+        android:id="@+id/buttonCancel3"
+        android:layout_width="94dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginBottom="52dp"
+        android:onClick="backOnMain"
+        android:text="@string/back"
+        app:backgroundTint="#ED6293"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRegClient"
+        android:layout_width="201dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="150dp"
+        android:background="#5060EC"
+        android:onClick="onCreateClientAcc"
+        android:text="@string/clientR"
+        android:textColor="#F5F5F5"
+        android:textSize="18sp"
+        app:backgroundTint="#C883D5"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCancel3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonRegWiz"
+        android:layout_width="201dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="58dp"
+        android:background="#5060EC"
+        android:onClick="onCreateWizAcc"
+        android:text="@string/masterR"
+        android:textColor="#F5F5F5"
+        android:textSize="18sp"
+        app:backgroundTint="#9DABFD"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegClient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/quest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="114dp"
+        android:fontFamily="serif"
+        android:text="@string/quest"
+        android:textSize="23sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonRegWiz"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

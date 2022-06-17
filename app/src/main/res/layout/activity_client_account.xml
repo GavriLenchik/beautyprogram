@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6C7C7"
+    tools:context=".forClient.ClientAccount">
+
+    <ImageButton
+        android:id="@+id/imageButtonAboutApp3"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="63dp"
+        android:contentDescription="aboutApp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <Button
+        android:id="@+id/buttonCFreeMasters"
+        android:layout_width="217dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="115dp"
+        android:background="#7FE6DE"
+        android:onClick="onMastersList"
+        android:text="@string/masters"
+        android:textColor="#455A64"
+        android:textSize="18sp"
+        app:backgroundTint="#EC9E9E"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWExit2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWExit2"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="57dp"
+        android:background="#7FE6DE"
+        android:onClick="backOnMain"
+        android:text="@string/exit"
+        android:textColor="#37474E"
+        android:textSize="15sp"
+        app:backgroundTint="#F16E7D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textAboutApp3"
+        android:layout_width="161dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="66dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/about"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonAboutApp3"
+        app:layout_constraintStart_toEndOf="@+id/buttonWExit2" />
+
+    <Button
+        android:id="@+id/buttonCOrder"
+        android:layout_width="223dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="39dp"
+        android:background="#7FE6DE"
+        android:onClick="onOrder"
+        android:text="@string/order"
+        android:textColor="#455A64"
+        android:textSize="18sp"
+        app:backgroundTint="#A5BEEF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCFreeMasters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCProfile"
+        android:layout_width="221dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginBottom="47dp"
+        android:background="#C9AFEF"
+        android:onClick="onClientProfile"
+        android:text="@string/profile"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:backgroundTint="#C492E8"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wel" />
+
+    <TextView
+        android:id="@+id/wel"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="73dp"
+        android:fontFamily="serif"
+        android:text="@string/welcome"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

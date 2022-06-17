@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4DCDC"
+    tools:context=".forClient.WindowOrder">
+
+    <Button
+        android:id="@+id/buttonSendRec"
+        android:layout_width="172dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="36dp"
+        android:text="@string/sendReq"
+        app:backgroundTint="#519F59"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCancelRec"
+        app:layout_constraintTop_toBottomOf="@+id/switchUrg" />
+
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:text="@string/make"
+        android:textColor="#AC09C8"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxClassic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="61dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/makeClassic"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxInv"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxInv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/makeInvoice"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewType" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTheatr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="1dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/makeTheatrical"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxEven"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxInv" />
+
+    <CheckBox
+        android:id="@+id/checkBoxEven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="61dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/makeEvening"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/makeBored"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxEven" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="21dp"
+        android:ems="10"
+        android:hint="@string/dataText"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTime6"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerEquipChosse" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/priceService"
+        android:textColor="#090808"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxBor" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxBor"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTheatr" />
+
+    <Spinner
+        android:id="@+id/spinnerEquipChosse"
+        android:layout_width="227dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/equiMaster"
+        app:layout_constraintStart_toEndOf="@+id/textViewTime5"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextAddress" />
+
+    <TextView
+        android:id="@+id/textViewTime8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="17dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/details"
+        android:textColor="#191818"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextMultiLine2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime7" />
+
+    <TextView
+        android:id="@+id/textViewTime7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="35dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/time"
+        android:textColor="#191818"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime6" />
+
+    <EditText
+        android:id="@+id/editTextTextAddress"
+        android:layout_width="284dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Order address"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTime3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+
+    <Spinner
+        android:id="@+id/spinnerValute"
+        android:layout_width="112dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="@string/uan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxTheatr" />
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="291dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="@string/timeText"
+        android:inputType="time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <TextView
+        android:id="@+id/textViewTime3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/address"
+        android:textColor="#191818"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textViewTime6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="37dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/date"
+        android:textColor="#191818"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTime5" />
+
+    <TextView
+        android:id="@+id/textViewTime5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="27dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/equip"
+        android:textColor="#191818"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="291dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/wishes"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTime" />
+
+    <Switch
+        android:id="@+id/switchUrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="160dp"
+        android:minHeight="48dp"
+        android:text="@string/urgent"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+
+    <Button
+        android:id="@+id/buttonCancelRec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="backOnOrderList"
+        android:text="@string/cancelReq"
+        app:backgroundTint="#AF5454"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSendRec"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switchUrg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6C7C7"
+    tools:context=".forWizard.WizardAccount">
+
+    <Button
+        android:id="@+id/buttonWExit"
+        android:layout_width="92dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="57dp"
+        android:background="#7FE6DE"
+        android:onClick="backOnMain"
+        android:text="@string/exit"
+        android:textColor="#37474E"
+        android:textSize="15sp"
+        app:backgroundTint="#F16E7D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWFreeOrd"
+        android:layout_width="193dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="117dp"
+        android:background="#7FE6DE"
+        android:onClick="onWFreeOrder"
+        android:text="@string/freeOrders"
+        android:textColor="#455A64"
+        android:textSize="18sp"
+        app:backgroundTint="#EC9E9E"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWExit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWOrders"
+        android:layout_width="193dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="39dp"
+        android:background="#7FE6DE"
+        android:text="@string/orders"
+        android:textColor="#455A64"
+        android:textSize="18sp"
+        app:backgroundTint="#A5BEEF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWFreeOrd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonWProfile"
+        android:layout_width="201dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="105dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="33dp"
+        android:background="#C9AFEF"
+        android:onClick="onWProfile"
+        android:text="@string/profile"
+        android:textColor="#37474F"
+        android:textSize="18sp"
+        app:backgroundTint="#C18AE8"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWOrders"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Wel"
+        android:layout_width="169dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="73dp"
+        android:fontFamily="serif"
+        android:text="@string/welcome"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textAboutApp"
+        android:layout_width="161dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="63dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/about"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonAboutApp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonAboutApp"
+        android:contentDescription="aboutApp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="570dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="63dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
