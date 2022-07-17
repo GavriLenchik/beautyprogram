@@ -79,7 +79,7 @@ public class GuestFreeOrders extends AppCompatActivity {
         startActivity(intentWizAcc);
     }
     public void onFreeOrder(View v, int idOrder){
-        Intent intentFreeOrder = new Intent(this, WindowFreeOrder.class);
+        Intent intentFreeOrder = new Intent(this, GuestFreeOrder.class);
         intentFreeOrder.putExtra("idOrder", idOrder);
         startActivity(intentFreeOrder);
     }

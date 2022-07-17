@@ -27,6 +27,7 @@ public class GuestFreeOrder extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_guest_free_order);
 
+        ordersBase = new OrdersBase(this);
         int currentOrder = getIntent().getIntExtra("idOrder", 0);
         textViewCustomName3 = findViewById(R.id.textViewCustomName3);
         buttonRespond3 = findViewById(R.id.buttonRespond3);

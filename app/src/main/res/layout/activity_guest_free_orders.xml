@@ -18,24 +18,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="409dp"
-        android:layout_height="516dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
+        android:layout_width="407dp"
+        android:layout_height="485dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="15dp"
         android:contentDescription="@string/orderSMS"
-        app:layout_constraintBottom_toTopOf="@+id/imageButtonBack2"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonBack5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonAll">
+        app:layout_constraintTop_toBottomOf="@+id/buttonUrgent2">
 
         <LinearLayout
             android:id="@+id/linGOrderList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:divider="@android:drawable/button_onoff_indicator_off"
-            android:showDividers="middle"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical"
+            android:showDividers="middle"></LinearLayout>
     </ScrollView>
 
     <Button
